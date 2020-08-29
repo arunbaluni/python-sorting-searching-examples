@@ -15,13 +15,17 @@ def bubble_sort(input_list):
 
 
 def main():
-	input_list = [91, 45, 23, 59, 0, 3,-11, 65]
-	print("##########################\n")
-	print("Input list to be sorted:")
-	print(input_list, "\n")
-	bubble_sort(input_list)
-	print("\nFinal sorted list:", input_list)
-	print("##########################")
+        input_list = []
+        input_list_length = int(input("Enter length of list to be created: "))
+        for i in range(0, input_list_length, 1):
+            temp = int(input("Enter the item " + str(i) + "\n"))
+            input_list.append(temp)
+        print("##########################\n")
+        print("Input list to be sorted:")
+        print(input_list, "\n")
+        bubble_sort(input_list)
+        print("\nFinal sorted list:", input_list)
+        print("##########################")
 
 
 if(__name__=="__main__"):
