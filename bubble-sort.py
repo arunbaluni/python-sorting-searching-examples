@@ -24,7 +24,7 @@ def main():
         print("Input list to be sorted:")
         print(input_list, "\n")
         bubble_sort(input_list)
-        print("\nFinal sorted list:", input_list)
+        print("\n\nFinal sorted list:", input_list)
         print("##########################")
 
 
